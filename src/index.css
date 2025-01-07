@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100vw;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* Desktop width */
+  padding: 0 16px; /* Padding for mobile screens */
+  margin: 0 auto; /* Center the layout */
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%; /* Shrink layout on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 95%; /* Stretch closer to edges on mobiles */
+  }
+}
