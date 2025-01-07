@@ -62,7 +62,9 @@ const HomeComp = () => {
               <div className="flex flex-row justify-between">
                 <div className="flex flex-col gap-4">
                   <div className="flex gap-[20rem] items-start justify-between">
-                    <label className="flex items-center">GST No</label>
+                    <label className="flex items-center font-medium">
+                      GST No
+                    </label>
                     <Field
                       className="border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500 min-w-[500px]"
                       name="gstNo"
@@ -70,7 +72,7 @@ const HomeComp = () => {
                     />
                   </div>
                   <div className="flex gap-[20rem] items-start justify-between">
-                    <label className="flex items-center">
+                    <label className="flex items-center font-medium">
                       Name <span className="text-red-500 ml-1">*</span>
                     </label>
                     <div>
@@ -88,7 +90,7 @@ const HomeComp = () => {
                     </div>
                   </div>
                   <div className="flex gap-[20rem] items-start justify-between">
-                    <label>
+                    <label className="flex items-center font-medium">
                       Print Name <span className="text-red-500 ml-1">*</span>
                     </label>
                     <Field
@@ -103,7 +105,9 @@ const HomeComp = () => {
                     />
                   </div>
                   <div className="flex gap-[20rem] items-start justify-between">
-                    <label>Identification</label>
+                    <label className="flex items-center font-medium">
+                      Identification
+                    </label>
                     <Field
                       className="border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500 min-w-[500px]"
                       name="identification"
@@ -111,7 +115,7 @@ const HomeComp = () => {
                     />
                   </div>
                   <div className="flex gap-[20rem] items-start justify-between">
-                    <label>
+                    <label className="flex items-center font-medium">
                       Code <span className="text-red-500 ml-1">*</span>
                     </label>
                     <Field
@@ -126,46 +130,54 @@ const HomeComp = () => {
                     />
                   </div>
                   <div className="flex gap-[20rem] items-start justify-between">
-                    <label>
+                    <label className="flex items-center font-medium">
                       Under Ledger <span className="text-red-500 ml-1">*</span>
                     </label>
-                    <Field
-                      className="border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500 min-w-[500px]"
-                      name="underLedger"
-                      as="select"
-                    >
-                      <option value="">Select...</option>
-                      <option value="ledger1">Ledger 1</option>
-                      <option value="ledger2">Ledger 2</option>
-                    </Field>
-                    <ErrorMessage
-                      name="underLedger"
-                      component="div"
-                      className="error"
-                    />
-                  </div>
-                  <div className="flex gap-[20rem] items-start justify-between">
-                    <label>
-                      Vendor Common for Sales Purchase
+                    <div>
                       <Field
                         className="border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500 min-w-[500px]"
+                        name="underLedger"
+                        as="select"
+                      >
+                        <option value="">Select...</option>
+                        <option value="ledger1">Ledger 1</option>
+                        <option value="ledger2">Ledger 2</option>
+                      </Field>
+                      <ErrorMessage
+                        name="underLedger"
+                        component="div"
+                        className="error"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex gap-[20rem] items-start justify-between">
+                    <label className="flex items-center font-medium">
+                      Vendor Common for Sales Purchase
+                    </label>
+                    <div>
+                      <Field
+                        className="border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500"
                         name="vendorCommon"
                         type="checkbox"
                       />
-                    </label>
+                    </div>
                   </div>
                   <div className="flex gap-[20rem] items-start justify-between">
-                    <label>
+                    <label className="flex items-center font-medium">
                       Is Sub Vendor
+                    </label>
+                    <div>
                       <Field
-                        className="border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500 min-w-[500px]"
+                        className="border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500"
                         name="isSubVendor"
                         type="checkbox"
                       />
-                    </label>
+                    </div>
                   </div>
                   <div className="flex gap-[20rem] items-start justify-between">
-                    <label>Firm Status</label>
+                    <label className="flex items-center font-medium">
+                      Firm Status
+                    </label>
                     <Field
                       className="border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500 min-w-[500px]"
                       name="firmStatus"
@@ -177,7 +189,9 @@ const HomeComp = () => {
                     </Field>
                   </div>
                   <div className="flex gap-[20rem] items-start justify-between">
-                    <label>Territory</label>
+                    <label className="flex items-center font-medium">
+                      Territory
+                    </label>
                     <Field
                       className="border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500 min-w-[500px]"
                       name="territory"
@@ -189,7 +203,9 @@ const HomeComp = () => {
                     </Field>
                   </div>
                   <div className="flex gap-[20rem] items-start justify-between">
-                    <label>Vendor Category</label>
+                    <label className="flex items-center font-medium">
+                      Vendor Category
+                    </label>
                     <Field
                       className="border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500 min-w-[500px]"
                       name="vendorCategory"
@@ -201,7 +217,9 @@ const HomeComp = () => {
                     </Field>
                   </div>
                   <div className="flex gap-[20rem] items-start justify-between">
-                    <label>Contact Person</label>
+                    <label className="flex items-center font-medium">
+                      Contact Person
+                    </label>
                     <Field
                       className="border border-gray-300 rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500 min-w-[500px]"
                       name="contactPerson"
